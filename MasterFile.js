@@ -28,3 +28,21 @@ difference between let and var keyword
 * variable declared using let keyword can be reassigned but cannot be redeclared
 * variable declared using const keyword can neither be reassigned nor be redclared. It is read only. They are constant
 */
+
+// Setup
+const myDog = {
+  name: "Happy Coder",
+  legs: 4,
+  tails: 1,
+  food: [],
+  friends: ["freeCodeCamp Campers"],
+  bark: "woof",
+};
+
+// Only change code below this line
+delete myDog.tails;
+
+let func = (obj, prop) => {
+  obj.prop;
+};
+console.log(func(myDog, "food"));
